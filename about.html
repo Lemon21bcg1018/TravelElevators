@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
         }
-        /* Required CSS additions for this layout */
+        /* About Page Specific Styles */
         .about-hero {
             background-color: var(--bg-dark);
             color: var(--white);
@@ -32,7 +32,8 @@
             color: #94a3b8;
             font-weight: 300;
         }
-        /* Mobile adjustments for the two-column section */
+        
+        /* Mobile adjustments */
         @media (max-width: 900px) {
             .about-content {
                 align-items: center;
@@ -48,7 +49,8 @@
                 justify-content: center;
             }
         }
-        /* Styling the card titles for better visibility, similar to the image */
+        
+        /* Consistent card styling */
         .feature-card h3 {
             border-bottom: 2px solid var(--accent);
             padding-bottom: 5px;
@@ -76,11 +78,12 @@
                         <a href="index.html#cat-services">Services</a>
                     </div>
                 </div>
-                <a href="#" class="nav-item" style="color: var(--primary);">Company</a>
+                <a href="about.html" class="nav-item" style="color: var(--primary);">Company</a>
                 <a href="#contact" class="btn-nav">Contact Us</a>
             </div>
         </div>
     </nav>
+
     <main class="detail-body">
         
         <section class="about-hero">
@@ -94,7 +97,6 @@
             <div class="container about-wrapper">
                 
                 <div class="about-content">
-                    
                     <span class="eyebrow-text" style="font-size: 1.1rem; color: var(--bg-dark);">Welcome to TVE Travel Elevator —</span>
                     
                     <h2 class="about-headline" style="margin-top: 10px; margin-bottom: 20px;">Excellence in Motion</h2>
@@ -118,13 +120,11 @@
                 </div>
 
                 <div class="about-visuals" style="padding: 0; text-align: center;">
-                    
                     <img src="Lifts/Luxury Residential Automatic Elevator.jpg" alt="High-quality luxury elevator cabin" style="width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 20px 50px -10px rgba(0,0,0,0.25); display: block;">
                     
                     <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-top: 20px;">
                         EST. <span style="color: var(--bg-dark);">2010</span>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -140,50 +140,49 @@
                     
                     <div class="feature-card">
                         <h3>Passenger Elevators</h3>
-                        <p>High-efficiency, custom-finish lifts for commercial towers and residential buildings, ensuring fluid and silent operation.</p>
-                        <a href="catalog.html#passenger" class="p-link">View Products</a>
+                        <p>High-efficiency, custom-finish lifts for commercial towers and residential buildings.</p>
+                        <a href="index.html#cat-passenger-elevators" class="p-link">View Products</a>
                     </div>
                     
                     <div class="feature-card">
                         <h3>Home Elevators</h3>
-                        <p>Luxury hydraulic and traction lifts designed for minimal space requirement, seamless integration, and residential comfort.</p>
-                        <a href="catalog.html#home" class="p-link">View Products</a>
+                        <p>Luxury hydraulic and traction lifts designed for minimal space requirement.</p>
+                        <a href="index.html#cat-home-elevators" class="p-link">View Products</a>
                     </div>
 
                     <div class="feature-card">
                         <h3>Specialized & Goods Lifts</h3>
-                        <p>Heavy-duty, robust solutions including Hospital Stretcher Lifts and Industrial Goods-Cum-Passenger Elevators.</p>
-                        <a href="catalog.html#specialized" class="p-link">View Products</a>
+                        <p>Heavy-duty, robust solutions including Hospital Stretcher Lifts and Industrial Goods.</p>
+                        <a href="index.html#cat-specialized-elevators" class="p-link">View Products</a>
                     </div>
 
                     <div class="feature-card">
                         <h3>Capsule Elevators</h3>
-                        <p>Panoramic glass-bodied elevators offering stunning views and a modern, high-end architectural statement for lobbies.</p>
-                        <a href="catalog.html#capsule" class="p-link">View Products</a>
+                        <p>Panoramic glass-bodied elevators offering stunning views and a modern statement.</p>
+                        <a href="index.html#cat-capsule-elevators" class="p-link">View Products</a>
                     </div>
 
                     <div class="feature-card">
                         <h3>Automobile Lifts</h3>
-                        <p>Heavy-duty car parking lifts engineered for high capacity and reliable vertical movement of vehicles in commercial garages.</p>
-                        <a href="catalog.html#automobile" class="p-link">View Products</a>
+                        <p>Heavy-duty car parking lifts engineered for high capacity and reliable vertical movement.</p>
+                        <a href="index.html#cat-automobile-elevators" class="p-link">View Products</a>
                     </div>
 
                     <div class="feature-card">
                         <h3>Elevator Parts & Doors</h3>
-                        <p>Sourcing and installation of high-quality components, including SS-304 cabins, doors, and advanced safety door sensors.</p>
-                        <a href="catalog.html#parts" class="p-link">View Products</a>
+                        <p>Sourcing and installation of high-quality components, including SS-304 cabins and sensors.</p>
+                        <a href="index.html#cat-elevator-parts" class="p-link">View Products</a>
                     </div>
 
                     <div class="feature-card">
                         <h3>24/7 AMC Services</h3>
-                        <p>Comprehensive Annual Maintenance Contracts (AMC) and round-the-clock emergency support by certified engineers.</p>
-                        <a href="catalog.html#services" class="p-link">View Service Plans</a>
+                        <p>Comprehensive Annual Maintenance Contracts (AMC) and round-the-clock emergency support.</p>
+                        <a href="index.html#cat-services" class="p-link">View Service Plans</a>
                     </div>
 
                 </div>
             </div>
         </section>
-
 
         <section class="section bg-grey" style="text-align:center; padding: 80px 0;">
             <div class="container">
@@ -219,8 +218,5 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+
+    <script src="https
