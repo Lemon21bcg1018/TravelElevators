@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TVE Travel Elevator | Excellence in Vertical Motion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .btn-with-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Required CSS additions for this layout */
+        .about-hero {
+            background-color: var(--bg-dark);
+            color: var(--white);
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .about-hero h1 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+        .about-hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 300;
+        }
+        /* Mobile adjustments for the two-column section */
+        @media (max-width: 900px) {
+            .about-content {
+                align-items: center;
+                text-align: center;
+            }
+            .about-body p {
+                max-width: 100%;
+            }
+            .about-features {
+                margin: 10px auto 32px;
+            }
+            .about-features li {
+                justify-content: center;
+            }
+        }
+        /* Styling the card titles for better visibility, similar to the image */
+        .feature-card h3 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Travel Elevator<span class="dot">.</span></a>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-dropdown">
+                    <span class="nav-item dropdown-trigger">Categories ▾</span>
+                    <div class="dropdown-content">
+                        <a href="index.html#cat-passenger-elevators">Passenger Elevators</a>
+                        <a href="index.html#cat-home-elevators">Home Elevators</a>
+                        <a href="index.html#cat-elevator-parts">Parts & Accessories</a>
+                        <a href="index.html#cat-specialized-elevators">Specialized / Goods</a>
+                        <a href="index.html#cat-capsule-elevators">Capsule Lifts</a>
+                        <a href="index.html#cat-automobile-elevators">Car Lifts</a>
+                        <a href="index.html#cat-services">Services</a>
+                    </div>
+                </div>
+                <a href="#" class="nav-item" style="color: var(--primary);">Company</a>
+                <a href="#contact" class="btn-nav">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <main class="detail-body">
+        
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="gsap-fade">About Us</h1>
+                <p class="gsap-fade" style="font-size: 0.9rem; color: #a0aec0;">Home &raquo; About Us</p>
+            </div>
+        </section>
+
+        <section id="mission" class="section">
+            <div class="container about-wrapper">
+                
+                <div class="about-content">
+                    
+                    <span class="eyebrow-text" style="font-size: 1.1rem; color: var(--bg-dark);">Welcome to TVE Travel Elevator —</span>
+                    
+                    <h2 class="about-headline" style="margin-top: 10px; margin-bottom: 20px;">Excellence in Motion</h2>
+                    
+                    <ul class="about-features" style="list-style: none; margin-top: 0; margin-bottom: 30px;">
+                        <li style="font-weight: 600; font-family: var(--font-body); font-size: 1.05rem; margin-bottom: 10px; color: var(--text-main);">— Commitment to Zero Accidents and Safety First</li>
+                        <li style="font-weight: 600; font-family: var(--font-body); font-size: 1.05rem; margin-bottom: 10px; color: var(--text-main);">— Unparalleled Customization for Luxury & Design</li>
+                        <li style="font-weight: 600; font-family: var(--font-body); font-size: 1.05rem; margin-bottom: 10px; color: var(--text-main);">— State-of-the-Art Precision Engineering</li>
+                    </ul>
+
+                    <div class="about-body">
+                        <p>
+                            TVE Travel Elevator is dedicated to redefining vertical mobility through state-of-the-art engineering and an unyielding focus on quality. Our mission centers on integrating the highest standards of safety, luxury, and custom design into every project across industrial, residential, and commercial sectors.
+                        </p>
+                    </div>
+                    
+                    <a href="https://wa.me/918279404446" class="btn-primary btn-sharp btn-with-icon" target="_blank" style="margin-top: 30px;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20" height="20" style="margin-right: 8px;"> 
+                        WhatsApp Us Now
+                    </a>
+                </div>
+
+                <div class="about-visuals" style="padding: 0; text-align: center;">
+                    
+                    <img src="Lifts/Luxury Residential Automatic Elevator.jpg" alt="High-quality luxury elevator cabin" style="width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 20px 50px -10px rgba(0,0,0,0.25); display: block;">
+                    
+                    <div style="font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--accent); margin-top: 20px;">
+                        EST. <span style="color: var(--bg-dark);">2010</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 50px; padding-bottom: 100px;">
+            <div class="container">
+                
+                <div class="section-title" style="text-align: center; border-left: none; padding-left: 0; margin-bottom: 40px;">
+                    <h2 style="font-size: 2.2rem; line-height: 1.2;">TVE Provides Best Standards And Products <br> **High Performance Services For Multiple Industries And Technologies!**</h2>
+                </div>
+                
+                <div class="features-grid">
+                    
+                    <div class="feature-card">
+                        <h3>Passenger Elevators</h3>
+                        <p>High-efficiency, custom-finish lifts for commercial towers and residential buildings, ensuring fluid and silent operation.</p>
+                        <a href="catalog.html#passenger" class="p-link">View Products</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Home Elevators</h3>
+                        <p>Luxury hydraulic and traction lifts designed for minimal space requirement, seamless integration, and residential comfort.</p>
+                        <a href="catalog.html#home" class="p-link">View Products</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Specialized & Goods Lifts</h3>
+                        <p>Heavy-duty, robust solutions including Hospital Stretcher Lifts and Industrial Goods-Cum-Passenger Elevators.</p>
+                        <a href="catalog.html#specialized" class="p-link">View Products</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Capsule Elevators</h3>
+                        <p>Panoramic glass-bodied elevators offering stunning views and a modern, high-end architectural statement for lobbies.</p>
+                        <a href="catalog.html#capsule" class="p-link">View Products</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Automobile Lifts</h3>
+                        <p>Heavy-duty car parking lifts engineered for high capacity and reliable vertical movement of vehicles in commercial garages.</p>
+                        <a href="catalog.html#automobile" class="p-link">View Products</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Elevator Parts & Doors</h3>
+                        <p>Sourcing and installation of high-quality components, including SS-304 cabins, doors, and advanced safety door sensors.</p>
+                        <a href="catalog.html#parts" class="p-link">View Products</a>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>24/7 AMC Services</h3>
+                        <p>Comprehensive Annual Maintenance Contracts (AMC) and round-the-clock emergency support by certified engineers.</p>
+                        <a href="catalog.html#services" class="p-link">View Service Plans</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section bg-grey" style="text-align:center; padding: 80px 0;">
+            <div class="container">
+                <h2 class="about-headline" style="font-size: 2.5rem; margin-bottom: 40px; color: var(--bg-dark);">
+                    Need Immediate Assistance or a Custom Quote?
+                </h2>
+                
+                <a href="https://wa.me/918279404446" class="btn-primary btn-sharp btn-with-icon" target="_blank" style="padding: 20px 50px; font-size: 1.2rem;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24" height="24" style="margin-right: 12px;"> 
+                    Contact Us
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>TVE Travel Elevator</h2>
+                    <p id="footer-address">Loading Address...</p>
+                    <div id="footer-phones" class="phone-list"></div>
+                    <p id="footer-email" class="email-link"></p>
+                </div>
+                <div class="footer-cta">
+                    <h3>Ready to upgrade?</h3>
+                    <a href="tel:+918279404446" class="btn-primary">Call Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> TVE Travel Elevator. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

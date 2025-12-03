@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | TVE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="detail-body">
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">TVE<span class="dot">.</span></a>
+            <a href="index.html#catalog" class="back-btn">← Back to Catalog</a>
+        </div>
+    </nav>
+
+    <main class="detail-container">
+        <div class="container">
+            <div class="detail-layout" id="detail-card">
+                <div class="detail-left">
+                    <img id="d-img" src="" alt="Product" class="detail-hero-img">
+                </div>
+                <div class="detail-right">
+                    <span class="category-tag" id="d-category">Category</span>
+                    <h1 id="d-name">Product Name</h1>
+                    <h2 class="price-tag" id="d-price">Price</h2>
+                    
+                    <div class="info-block">
+                        <h3>Description</h3>
+                        <p id="d-details">Loading...</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>Specifications</h3>
+                        <ul id="d-specs" class="spec-grid"></ul>
+                    </div>
+
+                    <div class="detail-actions">
+                        <button onclick="document.getElementById('contact').scrollIntoView();" class="btn-primary full-width">Enquire About This</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rec-section-wrapper" style="display: none; margin-top: 80px;">
+                <h3 class="cat-header">Related Solutions</h3>
+                <div class="marquee-container">
+                    <div class="marquee-track" id="rec-track">
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>TVE Travel Elevator</h2>
+                    <p id="footer-address">Loading Address...</p>
+                    <div id="footer-phones" class="phone-list"></div>
+                    <p id="footer-email" class="email-link"></p>
+                </div>
+                <div class="footer-cta" style="flex-grow: 1; max-width: 500px;">
+                    <h3>Request a Quote</h3>
+                    <form onsubmit="event.preventDefault(); alert('Request sent! We will call you shortly.');" class="footer-form">
+                        <input type="text" placeholder="Full Name" style="width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #334155; background: #1e293b; color: white;" required>
+                        <input type="email" placeholder="Email Address" style="width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #334155; background: #1e293b; color: white;" required>
+                        <textarea placeholder="Message..." rows="3" style="width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #334155; background: #1e293b; color: white;"></textarea>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Send Request</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> TVE Travel Elevator. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
